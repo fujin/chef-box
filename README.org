@@ -28,7 +28,8 @@ interweb cache.
 
   #+BEGIN_SRC: sh
 gem install bundler
-bundle install
+bundle install --path vendor/bundle --binstubs
+export PATH=`pwd`/bin:$PATH
   #+END_SRC
 
 * Build

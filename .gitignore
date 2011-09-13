@@ -2,6 +2,8 @@
 /.vagrant
 /.ssh
 /.rvm*
+/bin
 /iso
+/vendor/bundle
 *.box
 .DS_Store
