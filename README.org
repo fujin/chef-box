@@ -1,7 +1,6 @@
-#+Title:Chef Box: Chef Vagrant Boxes & Playground
-#+AUTHOR:Tim Dysinger
-#+EMAIL:tim@dysinger.net
-#+DATE:2011-06-26
+#+Title:  Chef Box: Chef Vagrant Boxes & Playground
+#+AUTHOR: Tim Dysinger
+#+EMAIL:  tim@dysinger.net
 
 This project enables you to automatically build a complete set of
 [[http://www.ubuntu.com/][Ubuntu]] boxes for use with [[http://vagrantup.com][Vagrant]].  The boxes are built with the
