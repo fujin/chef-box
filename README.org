@@ -23,7 +23,6 @@ interweb cache.
 * Requirements
 
   - [[http://www.virtualbox.org/wiki/Downloads][VirtualBox]] 4.1.2
-  - [[http://rvm.beginrescueend.com/][RVM]] latest
 
 * Setup
 

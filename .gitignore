@@ -1,6 +1,7 @@
 *flymake*
 /.vagrant
 /.ssh
+/.rvm*
 /iso
 *.box
 .DS_Store
