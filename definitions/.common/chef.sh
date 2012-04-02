@@ -1,13 +1,24 @@
 #!/bin/bash -ex
 
-apt-get update
-apt-get install -y ruby ruby1.8-dev build-essential wget libruby-extras libruby1.8-extras
-cd /tmp
-wget http://production.cf.rubygems.org/rubygems/rubygems-1.6.2.tgz
-tar zxf rubygems-1.6.2.tgz
-cd rubygems-1.6.2
-ruby setup.rb --no-format-executable
-gem update --no-rdoc --no-ri
-gem install ohai --no-rdoc --no-ri --verbose
-gem install chef --no-rdoc --no-ri --verbose
+exists() {
+  if command -v $1 &>/dev/null
+  then
+    return 0
+  else
+    return 1
+  fi
+}
 
+install_sh="http://opscode.com/chef/install.sh"
+
+if ! exists /usr/bin/chef-client; then
+  if exists wget; then
+    bash <(wget ${install_sh} -O -)
+  else
+    if exists curl; then
+      bash <(curl -L ${install_sh})
+    fi
+  fi
+fi
+
+mkdir -p /etc/chef
