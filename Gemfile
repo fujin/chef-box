@@ -7,6 +7,7 @@ group :chef do
 end
 
 group :vagrant do
-  gem "vagrant", "~> 0.8.7" ; gem "json", "1.5.2"
-  gem "veewee", "~> 0.2.0"
+  gem "vagrant", "~> 1.0"
+  gem "veewee"
+  #  gem "json", "1.5.2"
 end
