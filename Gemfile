@@ -2,9 +2,9 @@ source :rubygems
 
 gem "rake", "~> 0.9.2"
 
-group :chef do
-  gem "chef", "~> 0.10.4"
-end
+# group :chef do
+#   gem "chef", "~> 0.10"
+# end
 
 group :vagrant do
   gem "vagrant", "~> 1.0"
